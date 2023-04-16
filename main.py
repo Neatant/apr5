@@ -37,11 +37,7 @@ res = requests.post('https://e-hospital-prod.herokuapp.com/imageRetrieveByPhoneN
 dictFromServer = res.json()
         # Database Integration Api Code for E-hospital website using Phone Number
 
-    
-    
-    
-    
-    return "This is the API for Malaria Detection CNN Model"
+return "This is the API for Malaria Detection CNN Model"
 
 @app.post("/predict")
 async def endpoint_malaria_detection(image: UploadFile):
