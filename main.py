@@ -25,6 +25,7 @@ print(" ........... App Started ........... ")
 
 @app.get("/")
 def index():
+    """
     if request.method=='POST':
 if request.form['phone-number']!="":
 print(request.files['img'])
@@ -36,7 +37,7 @@ dictToSend={
 res = requests.post('https://e-hospital-prod.herokuapp.com/imageRetrieveByPhoneNumber', json=dictToSend)
 dictFromServer = res.json()
         # Database Integration Api Code for E-hospital website using Phone Number
-
+"""
 return "This is the API for Malaria Detection CNN Model"
 
 @app.post("/predict")
